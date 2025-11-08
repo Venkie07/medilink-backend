@@ -27,6 +27,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     process.env.FRONTEND_URL || 'http://localhost:8000',
+    'https://venkie07.github.io', 
     'http://localhost:8000', // Local development
     'https://medilink.vercel.app', // Update with your Vercel URL
     /\.vercel\.app$/, // Allow all Vercel preview deployments
