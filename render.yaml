@@ -9,18 +9,12 @@ services:
     rootDir: backend
     envVars:
       - key: SUPABASE_URL
-        sync: false
         value: https://ulkfogpuusgrfjsjcsdw.supabase.co
       - key: SUPABASE_KEY
-        sync: false
         value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVsa2ZvZ3B1dXNncmZqc2pjc2R3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI1ODEzNjAsImV4cCI6MjA3ODE1NzM2MH0.JHYEL85bf8CJhih8UKxmxU7uVSgaYCr8m0n6uO92QZc
       - key: JWT_SECRET
-        sync: false
         value: medilink-super-secret-jwt-key-2024-abc123xyz789-random-secure-string
       - key: PORT
-        sync: false
         value: 10000
       - key: NODE_ENV
-        sync: false
         value: production
-
