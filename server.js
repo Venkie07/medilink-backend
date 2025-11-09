@@ -26,15 +26,15 @@ const PORT = process.env.PORT || 5000;
 // CORS configuration - update with your Vercel frontend URL after deployment
 app.use(cors({
   origin: [
-    process.env.FRONTEND_URL || 'http://localhost:8000',
     'https://venkie07.github.io', 
-    'http://localhost:8000', // Local development
-    'https://medilink.vercel.app', // Update with your Vercel URL
-    /\.vercel\.app$/, // Allow all Vercel preview deployments
-    /\.netlify\.app$/ // Allow Netlify if needed
+    'https://medilink.vercel.app',
+    'http://localhost:8000'
   ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
